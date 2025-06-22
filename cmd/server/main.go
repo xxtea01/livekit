@@ -26,16 +26,14 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/urfave/cli/v3"
-
-	"github.com/livekit/livekit-server/pkg/rtc"
-	"github.com/livekit/livekit-server/pkg/telemetry/prometheus"
-	"github.com/livekit/protocol/logger"
-
 	"github.com/livekit/livekit-server/pkg/config"
 	"github.com/livekit/livekit-server/pkg/routing"
+	"github.com/livekit/livekit-server/pkg/rtc"
 	"github.com/livekit/livekit-server/pkg/service"
+	"github.com/livekit/livekit-server/pkg/telemetry/prometheus"
 	"github.com/livekit/livekit-server/version"
+	"github.com/livekit/protocol/logger"
+	"github.com/urfave/cli/v3"
 )
 
 var baseFlags = []cli.Flag{

@@ -23,18 +23,16 @@ import (
 	"time"
 
 	"github.com/dustin/go-humanize"
-	"github.com/olekukonko/tablewriter"
-	"github.com/urfave/cli/v3"
-	"gopkg.in/yaml.v3"
-
+	"github.com/livekit/livekit-server/pkg/config"
+	"github.com/livekit/livekit-server/pkg/routing"
+	"github.com/livekit/livekit-server/pkg/service"
 	"github.com/livekit/protocol/auth"
 	"github.com/livekit/protocol/livekit"
 	"github.com/livekit/protocol/utils"
 	"github.com/livekit/protocol/utils/guid"
-
-	"github.com/livekit/livekit-server/pkg/config"
-	"github.com/livekit/livekit-server/pkg/routing"
-	"github.com/livekit/livekit-server/pkg/service"
+	"github.com/olekukonko/tablewriter"
+	"github.com/urfave/cli/v3"
+	"gopkg.in/yaml.v3"
 )
 
 func generateKeys(_ context.Context, _ *cli.Command) error {
