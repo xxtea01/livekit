@@ -26,8 +26,6 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"google.golang.org/protobuf/types/known/emptypb"
-
 	"github.com/livekit/livekit-server/pkg/agent"
 	"github.com/livekit/livekit-server/pkg/config"
 	"github.com/livekit/livekit-server/pkg/routing"
@@ -40,6 +38,7 @@ import (
 	"github.com/livekit/protocol/rpc"
 	"github.com/livekit/protocol/utils"
 	"github.com/livekit/psrpc"
+	"google.golang.org/protobuf/types/known/emptypb"
 )
 
 type AgentSocketUpgrader struct {
