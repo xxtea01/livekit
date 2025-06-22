@@ -18,14 +18,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/require"
-
-	"github.com/livekit/protocol/auth"
-	"github.com/livekit/protocol/livekit"
-
 	"github.com/livekit/livekit-server/pkg/rtc"
 	"github.com/livekit/livekit-server/pkg/testutils"
 	"github.com/livekit/livekit-server/test/client"
+	"github.com/livekit/protocol/auth"
+	"github.com/livekit/protocol/livekit"
+	"github.com/stretchr/testify/require"
 )
 
 func TestMultiNodeRouting(t *testing.T) {

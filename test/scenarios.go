@@ -19,14 +19,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/stretchr/testify/require"
-	"go.uber.org/atomic"
-
-	"github.com/livekit/protocol/livekit"
-	"github.com/livekit/protocol/logger"
-
 	"github.com/livekit/livekit-server/pkg/testutils"
 	testclient "github.com/livekit/livekit-server/test/client"
+	"github.com/livekit/protocol/livekit"
+	"github.com/livekit/protocol/logger"
+	"github.com/stretchr/testify/require"
+	"go.uber.org/atomic"
 )
 
 // a scenario with lots of clients connecting, publishing, and leaving at random periods

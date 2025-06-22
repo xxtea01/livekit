@@ -25,23 +25,21 @@ import (
 	"testing"
 	"time"
 
-	"github.com/pion/sdp/v3"
-	"github.com/pion/webrtc/v4"
-	"github.com/stretchr/testify/require"
-	"github.com/thoas/go-funk"
-	"github.com/twitchtv/twirp"
-	"go.uber.org/atomic"
-
-	"github.com/livekit/protocol/auth"
-	"github.com/livekit/protocol/livekit"
-	"github.com/livekit/protocol/logger"
-
 	"github.com/livekit/livekit-server/pkg/config"
 	"github.com/livekit/livekit-server/pkg/rtc"
 	"github.com/livekit/livekit-server/pkg/sfu/datachannel"
 	"github.com/livekit/livekit-server/pkg/sfu/mime"
 	"github.com/livekit/livekit-server/pkg/testutils"
 	testclient "github.com/livekit/livekit-server/test/client"
+	"github.com/livekit/protocol/auth"
+	"github.com/livekit/protocol/livekit"
+	"github.com/livekit/protocol/logger"
+	"github.com/pion/sdp/v3"
+	"github.com/pion/webrtc/v4"
+	"github.com/stretchr/testify/require"
+	"github.com/thoas/go-funk"
+	"github.com/twitchtv/twirp"
+	"go.uber.org/atomic"
 )
 
 const (

@@ -21,10 +21,9 @@ import (
 	"sync"
 
 	"github.com/gorilla/websocket"
+	"github.com/livekit/protocol/livekit"
 	"go.uber.org/atomic"
 	"google.golang.org/protobuf/proto"
-
-	"github.com/livekit/protocol/livekit"
 )
 
 type agentClient struct {
