@@ -43,15 +43,6 @@ jobs:
         source: "bin/xxt-rpc,config/dev,migrations,Makefile"
         target: "xxt-rpc"
 
-    - name: Migrate
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.DEV_HOST }}
-        username: root
-        password: ${{ secrets.DEV_SERVER_PASSPHRASE }}
-        script: |
-          cd /root/xxt-rpc && make migrate-dev
-
     - name: Restart
       uses: appleboy/ssh-action@master
       with:
