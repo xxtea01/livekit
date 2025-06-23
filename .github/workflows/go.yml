@@ -40,7 +40,7 @@ jobs:
         host: ${{ secrets.DEV_HOST }}
         username: root
         password: ${{ secrets.DEV_SERVER_PASSPHRASE }}
-        source: "bin/livekit,config/dev,Makefile"
+        source: "bin/server,config/dev,Makefile"
         target: "livekit"
 
     - name: Restart
