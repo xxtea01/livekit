@@ -40,8 +40,8 @@ jobs:
         host: ${{ secrets.DEV_HOST }}
         username: root
         password: ${{ secrets.DEV_SERVER_PASSPHRASE }}
-        source: "bin/xxt-rpc,config/dev,migrations,Makefile"
-        target: "xxt-rpc"
+        source: "bin/livekit,config/dev,Makefile"
+        target: "livekit"
 
     - name: Restart
       uses: appleboy/ssh-action@master
@@ -50,6 +50,5 @@ jobs:
         username: root
         password: ${{ secrets.DEV_SERVER_PASSPHRASE }}
         script: |
-          curl -sS http://localhost:10201/status
-          sudo supervisorctl restart xxt-rpc
+          sudo supervisorctl restart livekit
           sleep 5
